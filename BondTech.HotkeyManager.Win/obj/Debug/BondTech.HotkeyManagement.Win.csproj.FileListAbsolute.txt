@@ -1,0 +1,8 @@
+C:\Users\503129107\Downloads\Manager\Global Shortcut Manager\BondTech.HotkeyManager.Win\bin\Debug\HotkeyManagement.dll
+C:\Users\503129107\Downloads\Manager\Global Shortcut Manager\BondTech.HotkeyManager.Win\bin\Debug\HotkeyManagement.pdb
+C:\Users\503129107\Downloads\Manager\Global Shortcut Manager\BondTech.HotkeyManager.Win\obj\Debug\BondTech.HotkeyManagement.Win.csprojResolveAssemblyReference.cache
+C:\Users\503129107\Downloads\Manager\Global Shortcut Manager\BondTech.HotkeyManager.Win\obj\Debug\BondTech.HotkeyManagement.Win.HotKeyControl.resources
+C:\Users\503129107\Downloads\Manager\Global Shortcut Manager\BondTech.HotkeyManager.Win\obj\Debug\BondTech.HotkeyManagement.Win.Properties.Resources.resources
+C:\Users\503129107\Downloads\Manager\Global Shortcut Manager\BondTech.HotkeyManager.Win\obj\Debug\BondTech.HotkeyManagement.Win.csproj.GenerateResource.Cache
+C:\Users\503129107\Downloads\Manager\Global Shortcut Manager\BondTech.HotkeyManager.Win\obj\Debug\HotkeyManagement.dll
+C:\Users\503129107\Downloads\Manager\Global Shortcut Manager\BondTech.HotkeyManager.Win\obj\Debug\HotkeyManagement.pdb
