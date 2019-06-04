@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BondTech.HotkeyManagement.Win", "BondTech.HotkeyManager.Win\BondTech.HotkeyManagement.Win.csproj", "{90B50709-4309-418C-8302-3C956BF4624C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CS", "CS", "{C152B6D9-05F7-4206-9AEA-50E988E931FE}"
@@ -24,6 +24,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalShortcutCS.WPF", "GlobalShortcutCS.WPF\GlobalShortcutCS.WPF.csproj", "{3D12641F-83AE-4B5C-A8D1-D8E504C6AE2C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BondTech.HotKeyManagement.WPF.4", "BondTech.HotKeyManagement.WPF.4\BondTech.HotKeyManagement.WPF.4.csproj", "{C78F31C0-EC07-4194-90D4-9CB771AD41A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{FADAF3E6-B00A-4C52-8A20-26F351E55AF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -88,6 +90,16 @@ Global
 		{C78F31C0-EC07-4194-90D4-9CB771AD41A1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{C78F31C0-EC07-4194-90D4-9CB771AD41A1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{C78F31C0-EC07-4194-90D4-9CB771AD41A1}.Release|x86.ActiveCfg = Release|Any CPU
+		{FADAF3E6-B00A-4C52-8A20-26F351E55AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FADAF3E6-B00A-4C52-8A20-26F351E55AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FADAF3E6-B00A-4C52-8A20-26F351E55AF7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FADAF3E6-B00A-4C52-8A20-26F351E55AF7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FADAF3E6-B00A-4C52-8A20-26F351E55AF7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FADAF3E6-B00A-4C52-8A20-26F351E55AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FADAF3E6-B00A-4C52-8A20-26F351E55AF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FADAF3E6-B00A-4C52-8A20-26F351E55AF7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FADAF3E6-B00A-4C52-8A20-26F351E55AF7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FADAF3E6-B00A-4C52-8A20-26F351E55AF7}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

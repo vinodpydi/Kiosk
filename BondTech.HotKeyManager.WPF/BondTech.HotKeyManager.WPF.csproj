@@ -50,6 +50,7 @@
     <Compile Include="Classes\Exceptions.cs" />
     <Compile Include="Classes\Global Shortcut Manager.cs" />
     <Compile Include="Classes\Helpers.cs" />
+    <Compile Include="Employee.cs" />
     <Compile Include="HotKeyControl.cs" />
     <Compile Include="Classes\HotKeys.cs" />
     <Compile Include="Classes\Keys Enum.cs" />
