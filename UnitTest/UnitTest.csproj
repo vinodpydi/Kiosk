@@ -35,8 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HotKeyManagement.WPF">
-      <HintPath>..\BondTech.HotKeyManager.WPF\bin\Debug\HotKeyManagement.WPF.dll</HintPath>
+    <Reference Include="HotKeyManagement.WPF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GlobalShortcutCS.WPF\bin\Debug\HotKeyManagement.WPF.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
