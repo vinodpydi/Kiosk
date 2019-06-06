@@ -30,6 +30,26 @@ namespace UnitTest
             Assert.AreEqual(expected1, actual1);  
         }
 
+        [TestMethod]
+        public void TestMethod2()
+        {
+            //Arrange  
+            Employee objEmployee = new Employee();
+            String firstName = "Vinod";
+            String lastName = "Pydi";
+           
+            String expected1 = "Vinod Pydi";
+         
+            String actual1;
+
+           
+            actual1 = objEmployee.GetName1(firstName, lastName);
+
+            //Assert  
+         
+            Assert.AreEqual(expected1, actual1);
+        }
+
        
     }
 }
