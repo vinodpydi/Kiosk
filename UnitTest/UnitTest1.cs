@@ -17,11 +17,19 @@ namespace UnitTest
             String firstName = "Vinod";
             String lastName = "Pydi";
             String expected = "Vinod";
+            String expected1 = "Vinod Pydi";
             String actual;
+            String actual1;
+
             //Act  
             actual = objEmployee.GetName(firstName, lastName);
+            actual1 = objEmployee.GetName1(firstName, lastName);
+
             //Assert  
-            Assert.AreEqual(expected, actual);  
+            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected1, actual1);  
         }
+
+       
     }
 }
