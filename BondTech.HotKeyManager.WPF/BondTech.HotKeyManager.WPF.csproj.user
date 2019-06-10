@@ -3,4 +3,10 @@
   <PropertyGroup>
     <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartWorkingDirectory>C:\Development\Projs\Kiosk\GlobalShortcutCS.WPF\bin\Release\</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartWorkingDirectory>C:\Development\Projs\Kiosk\GlobalShortcutCS.WPF\bin\Debug\</StartWorkingDirectory>
+  </PropertyGroup>
 </Project>
