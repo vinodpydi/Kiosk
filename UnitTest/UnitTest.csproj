@@ -42,7 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="HotKeyManagement.WPF">
-      <HintPath>..\BondTech.HotKeyManager.WPF\bin\Debug\HotKeyManagement.WPF.dll</HintPath>
+      <HintPath>..\GlobalShortcutCS.WPF\bin\Debug\HotKeyManagement.WPF.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
