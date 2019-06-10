@@ -5,6 +5,7 @@ using BondTech.HotKeyManagement.WPF;
 
 
 
+
 namespace UnitTest
 {
     [TestClass]
