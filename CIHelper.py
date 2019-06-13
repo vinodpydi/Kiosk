@@ -37,7 +37,7 @@ def CreateBuildDir(path, filesToKeep):
     os.mkdir(dirName)
     return dirName
 
-def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,buildLogPath):
+def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,buildLogPath, sourceNUnitpath):
     shutil.copytree(sourceBuildPath+"\\Release",destinationBuildPath+"\\Release")
     os.chdir(destinationBuildPath+"\\Release")
     os.mkdir("CodeAnalysis")
@@ -49,6 +49,12 @@ def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,bui
     for files in os.listdir(sourceUnitTestPath+"\\Release"):
         if(files.endswith('.xml')| files.endswith('.coveragexml')):
             shutil.move(files, destinationBuildPath+"\\Release\\UnitTest\\")  
+            
+    os.mkdir("NUnit")       
+    os.chdir(sourceNUnitpath+"\\Release")
+    for files in os.listdir(sourceNUnitpath+"\\Release"):
+        if(files.endswith('.xml')| files.endswith('.htm')):
+            shutil.move(files, destinationBuildPath+"\\Release\\NUnit\\")          
    
             
     shutil.copytree(sourceBuildPath+"\\Debug",destinationBuildPath+"\\Debug")
@@ -62,6 +68,12 @@ def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,bui
     for files in os.listdir(sourceUnitTestPath+"\\Debug"):
         if(files.endswith('.xml') | files.endswith('.coveragexml')):
             shutil.move(files, destinationBuildPath+"\\Debug\\UnitTest\\")
+            
+     os.mkdir("NUnit")    
+    os.chdir(sourceNUnitpath+"\\Debug")        
+    for files in os.listdir(sourceNUnitpath+"\\Debug"):
+        if(files.endswith('.xml') | files.endswith('.htm')):
+            shutil.move(files, destinationBuildPath+"\\Debug\\NUnit\\")        
                     
     
     shutil.move(buildLogPath+"\\DebugbuildLogs.log", destinationBuildPath)
@@ -70,4 +82,4 @@ def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,bui
 dirName=CreateBuildDir("C:\\Development\\Build\\CI\\",3)
 print("Name of the new Directory created: %s" %dirName)
 absoluteNewFilePath= "C:\\Development\\Build\\CI\\" + dirName
-CopyBuildFiles("C:\\Development\\Source\\Development\\GlobalShortcutCS.WPF\\bin", absoluteNewFilePath,"C:\\Development\\Source\\Development\\UnitTest\\bin","C:\\Development\\Source\\Development")
+CopyBuildFiles("C:\\Development\\Source\\Development\\GlobalShortcutCS.WPF\\bin", absoluteNewFilePath,"C:\\Development\\Source\\Development\\UnitTest\\bin","C:\\Development\\Source\\Development","C:\Development\Source\Development\NUnitApplication.Test\bin")
