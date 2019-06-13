@@ -37,7 +37,7 @@ def CreateBuildDir(path, filesToKeep):
     os.mkdir(dirName)
     return dirName
 
-def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,buildLogPath, sourceNUnitpath):
+def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,buildLogPath,"C:\\Development\\Source\\Development\\NUnitApplication.Test\\bin"):
     shutil.copytree(sourceBuildPath+"\\Release",destinationBuildPath+"\\Release")
     os.chdir(destinationBuildPath+"\\Release")
     os.mkdir("CodeAnalysis")
@@ -50,9 +50,10 @@ def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,bui
         if(files.endswith('.xml')| files.endswith('.coveragexml')):
             shutil.move(files, destinationBuildPath+"\\Release\\UnitTest\\")  
             
+    os.chdir(destinationBuildPath+"\\Release")        
     os.mkdir("NUnit")       
-    os.chdir(destinationBuildPath+"\\Release")
-    for files in os.listdir(destinationBuildPath+"\\Release"):
+  
+    for files in os.listdir(sourceNUnitpath+"\\Release"):
         if(files.endswith('.xml')| files.endswith('.htm')):
             shutil.move(files, destinationBuildPath+"\\Release\\NUnit\\")          
    
@@ -69,8 +70,9 @@ def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,bui
         if(files.endswith('.xml') | files.endswith('.coveragexml')):
             shutil.move(files, destinationBuildPath+"\\Debug\\UnitTest\\")
             
+    os.chdir("C:\\Development\\Source\\Development\\NUnitApplication.Test\\bin"+"\\Debug")         
     os.mkdir("NUnit")    
-    os.chdir(destinationBuildPath+"\\Debug")        
+           
     for files in os.listdir(destinationBuildPath+"\\Debug"):
         if(files.endswith('.xml') | files.endswith('.htm')):
             shutil.move(files, destinationBuildPath+"\\Debug\\NUnit\\")        
