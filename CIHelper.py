@@ -82,4 +82,4 @@ def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,bui
 dirName=CreateBuildDir("C:\\Development\\Build\\CI\\",3)
 print("Name of the new Directory created: %s" %dirName)
 absoluteNewFilePath= "C:\\Development\\Build\\CI\\" + dirName
-CopyBuildFiles("C:\\Development\\Source\\Development\\GlobalShortcutCS.WPF\\bin", absoluteNewFilePath,"C:\\Development\\Source\\Development\\UnitTest\\bin","C:\\Development\\Source\\Development","C:\Development\Source\Development\NUnitApplication.Test\bin")
+CopyBuildFiles("C:\\Development\\Source\\Development\\GlobalShortcutCS.WPF\\bin", absoluteNewFilePath,"C:\\Development\\Source\\Development\\UnitTest\\bin","C:\\Development\\Source\\Development","C:\\Development\\Source\\Development\\NUnitApplication.Test\\bin")
