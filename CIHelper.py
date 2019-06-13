@@ -48,11 +48,10 @@ def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,bui
     os.chdir(sourceUnitTestPath+"\\Release")
     for files in os.listdir(sourceUnitTestPath+"\\Release"):
         if(files.endswith('.xml')| files.endswith('.coveragexml')):
-            shutil.move(files, destinationBuildPath+"\\Release\\UnitTest\\")
-   
+            shutil.move(files, destinationBuildPath+"\\Release\\UnitTest\\")  
     os.mkdir("NUnit")  
     os.chdir(sourceUnitTestPath+"\\Release")    
-        for files in os.listdir(sourceUnitTestPath+"\\Release"):
+    for files in os.listdir(sourceUnitTestPath+"\\Release"):
         if(files.endswith('.xml')| files.endswith('.htm')):
             shutil.move(files, destinationBuildPath+"\\Release\\NUnit\\")
             
