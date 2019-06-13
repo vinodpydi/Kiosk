@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BondTech.HotKeyManagement.W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{FADAF3E6-B00A-4C52-8A20-26F351E55AF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitApplication.Test", "NUnitApplication.Test\NUnitApplication.Test.csproj", "{0E376FD4-876C-4A28-B459-FC059687556C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -100,6 +102,16 @@ Global
 		{FADAF3E6-B00A-4C52-8A20-26F351E55AF7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{FADAF3E6-B00A-4C52-8A20-26F351E55AF7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{FADAF3E6-B00A-4C52-8A20-26F351E55AF7}.Release|x86.ActiveCfg = Release|Any CPU
+		{0E376FD4-876C-4A28-B459-FC059687556C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E376FD4-876C-4A28-B459-FC059687556C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E376FD4-876C-4A28-B459-FC059687556C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0E376FD4-876C-4A28-B459-FC059687556C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0E376FD4-876C-4A28-B459-FC059687556C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0E376FD4-876C-4A28-B459-FC059687556C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E376FD4-876C-4A28-B459-FC059687556C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E376FD4-876C-4A28-B459-FC059687556C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0E376FD4-876C-4A28-B459-FC059687556C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0E376FD4-876C-4A28-B459-FC059687556C}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
