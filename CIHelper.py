@@ -47,10 +47,15 @@ def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,bui
     os.mkdir("UnitTest")       
     os.chdir(sourceUnitTestPath+"\\Release")
     for files in os.listdir(sourceUnitTestPath+"\\Release"):
-        if(files.endswith('.xml')| files.endswith('.coveragexml') | files.endswith('.htm')):
+        if(files.endswith('.xml')| files.endswith('.coveragexml')):
             shutil.move(files, destinationBuildPath+"\\Release\\UnitTest\\")
 
-
+  os.mkdir("NUnit")       
+    os.chdir(sourceUnitTestPath+"\\Release")
+    for files in os.listdir(sourceUnitTestPath+"\\Release"):
+        if(files.endswith('.xml')| files.endswith('.htm')):
+            shutil.move(files, destinationBuildPath+"\\Release\\NUnitApplication.Test\\")
+            
     shutil.copytree(sourceBuildPath+"\\Debug",destinationBuildPath+"\\Debug")
     os.chdir(destinationBuildPath+"\\Debug")
     os.mkdir("CodeAnalysis")
@@ -60,9 +65,14 @@ def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,bui
     os.mkdir("UnitTest")    
     os.chdir(sourceUnitTestPath+"\\Debug")        
     for files in os.listdir(sourceUnitTestPath+"\\Debug"):
-        if(files.endswith('.xml') | files.endswith('.coveragexml') | files.endswith('.htm')):
+        if(files.endswith('.xml') | files.endswith('.coveragexml')):
             shutil.move(files, destinationBuildPath+"\\Debug\\UnitTest\\")
-                          
+            
+    os.mkdir("NUnit")    
+    os.chdir(sourceUnitTestPath+"\\Debug")        
+    for files in os.listdir(sourceUnitTestPath+"\\Debug"):
+        if(files.endswith('.xml') | files.endswith('.htm')):
+            shutil.move(files, destinationBuildPath+"\\Debug\\NUnitApplication.Test\\")                      
     
     shutil.move(buildLogPath+"\\DebugbuildLogs.log", destinationBuildPath)
     shutil.move(buildLogPath+"\\ReleasebuildLogs.log", destinationBuildPath)
