@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BondTech.HotKeyManagement.WPF;
 
 
+
 namespace UnitTest
 {
     [TestClass]
@@ -13,7 +14,7 @@ namespace UnitTest
         {
             //Arrange
 
-            Employee objEmployee = new Employee();
+            Employ objEmployee = new Employ();
             String firstName = "Vinod";
             String lastName = "Pydi";
             String expected = "Vinod";
@@ -35,7 +36,7 @@ namespace UnitTest
         public void TestMethod2()
         {
             //Arrange  
-            Employee objEmployee = new Employee();
+            Employ objEmployee = new Employ();
             String firstName = "Vinod";
             String lastName = "Pydi";
            
