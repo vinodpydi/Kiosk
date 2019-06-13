@@ -42,7 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="HotKeyManagement.WPF">
-      <HintPath>..\GlobalShortcutCS.WPF\bin\Debug\HotKeyManagement.WPF.dll</HintPath>
+      <HintPath>..\BondTech.HotKeyManager.WPF\bin\Debug\HotKeyManagement.WPF.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
@@ -59,8 +59,19 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
