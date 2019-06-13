@@ -11,7 +11,7 @@ namespace UnitTest
         [TestMethod]
         public void TestMethod1()
         {
-            //Arrang
+            //Arrange
 
             Employee objEmployee = new Employee();
             String firstName = "Vinod";
@@ -22,7 +22,7 @@ namespace UnitTest
             String actual1;
 
 
-            //Act  
+            //Act 
             actual = objEmployee.GetName(firstName, lastName);
             actual1 = objEmployee.GetName1(firstName, lastName);
 
