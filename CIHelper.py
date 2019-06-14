@@ -48,16 +48,12 @@ def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,bui
     os.chdir(sourceUnitTestPath+"\\Release")
     for files in os.listdir(sourceUnitTestPath+"\\Release"):
         if(files.endswith('.xml')| files.endswith('.coveragexml')):
-            shutil.move(files, destinationBuildPath+"\\Release\\UnitTest\\")  
-          
-    os.chdir(sourceNUnit+"\\Release")        
+            shutil.move(files, destinationBuildPath+"\\Release\\UnitTest\\")                       
     os.mkdir("NUnit")     
-  
+    os.chdir(sourceNUnit+"\\Release") 
     for files in os.listdir(sourceNUnit+"\\Release"):
         if(files.endswith('.htm') | files.endswith('.xml')):
-            shutil.move(files, destinationBuildPath+"\\Release\\NUnit\\")          
-   
-            
+            shutil.move(files, destinationBuildPath+"\\Release\\NUnit\\")                        
     shutil.copytree(sourceBuildPath+"\\Debug",destinationBuildPath+"\\Debug")
     os.chdir(destinationBuildPath+"\\Debug")
     os.mkdir("CodeAnalysis")
@@ -68,17 +64,13 @@ def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,bui
     os.chdir(sourceUnitTestPath+"\\Debug")        
     for files in os.listdir(sourceUnitTestPath+"\\Debug"):
         if(files.endswith('.xml') | files.endswith('.coveragexml')):
-            shutil.move(files, destinationBuildPath+"\\Debug\\UnitTest\\")
-            
-            
-       
-    os.chdir(sourceNUnit+"\\Debug")
-    os.mkdir("NUnit")     
+            shutil.move(files, destinationBuildPath+"\\Debug\\UnitTest\\")                                  
+    os.mkdir("NUnit")
+    os.chdir(sourceNUnit+"\\Debug")    
     for files in os.listdir(sourceNUnit+"\\Debug"):
         if(files.endswith('.htm') | files.endswith('.xml')):
             shutil.move(files, destinationBuildPath+"\\Debug\\NUnit\\")        
-                    
-    
+                       
     shutil.move(buildLogPath+"\\DebugbuildLogs.log", destinationBuildPath)
     shutil.move(buildLogPath+"\\ReleasebuildLogs.log", destinationBuildPath)
 
