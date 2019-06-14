@@ -54,7 +54,7 @@ def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,bui
     os.mkdir("NUnit")     
   
     for files in os.listdir(sourceNUnit+"\\Release"):
-        if(files.endswith('.htm')):
+        if(files.endswith('.htm') | files.endswith('.xml')):
             shutil.move(files, destinationBuildPath+"\\Release\\NUnit\\")          
    
             
@@ -75,7 +75,7 @@ def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,bui
     os.chdir(destinationBuildPath+"\\Debug")
     os.mkdir("NUnit")     
     for files in os.listdir(sourceNUnit+"\\Debug"):
-        if(files.endswith('.htm')):
+        if(files.endswith('.htm') | files.endswith('.xml')):
             shutil.move(files, destinationBuildPath+"\\Debug\\NUnit\\")        
                     
     
