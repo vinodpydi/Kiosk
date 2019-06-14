@@ -53,7 +53,7 @@ def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,bui
     os.chdir(destinationBuildPath+"\\Release")        
     os.mkdir("NUnit")       
   
-    for files in os.listdir(sourceNUnitpath+"\\Release"):
+    for files in os.listdir(sourceNUnit+"\\Release"):
         if(files.endswith('.xml')| files.endswith('.htm')):
             shutil.move(files, destinationBuildPath+"\\Release\\NUnit\\")          
    
