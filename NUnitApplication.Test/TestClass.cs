@@ -1,4 +1,5 @@
-﻿using BondTech.HotKeyManagement.WPF;
+﻿
+using BondTech.HotKeyManagement.WPF;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
