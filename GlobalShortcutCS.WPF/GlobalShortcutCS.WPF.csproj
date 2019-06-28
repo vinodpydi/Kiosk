@@ -87,6 +87,14 @@
     <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HotKeyManagement.WPF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HotKeyManagement.WPF.1.0.0\lib\net30\HotKeyManagement.WPF.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HotKeyManagement.WPF.4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HotKeyManagement.WPF.4.1.0.0\lib\net40\HotKeyManagement.WPF.4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xaml" />
@@ -132,24 +140,21 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BondTech.HotKeyManagement.WPF.4\BondTech.HotKeyManagement.WPF.4.csproj">
-      <Project>{C78F31C0-EC07-4194-90D4-9CB771AD41A1}</Project>
-      <Name>BondTech.HotKeyManagement.WPF.4</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BondTech.HotKeyManager.WPF\BondTech.HotKeyManager.WPF.csproj">
-      <Project>{FF71E607-B300-4D9D-8021-2BF4DBB7FCEE}</Project>
-      <Name>BondTech.HotKeyManager.WPF</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- 
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.k
   <Target Name="BeforeBuild">
