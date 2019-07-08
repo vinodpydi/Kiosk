@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Development\\Projs\\Kiosk\\ExampleSpec\\ExampleSpec.csproj": {}
+  },
+  "projects": {
+    "C:\\Development\\Projs\\Kiosk\\ExampleSpec\\ExampleSpec.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Development\\Projs\\Kiosk\\ExampleSpec\\ExampleSpec.csproj",
+        "projectName": "ExampleSpec",
+        "projectPath": "C:\\Development\\Projs\\Kiosk\\ExampleSpec\\ExampleSpec.csproj",
+        "packagesPath": "C:\\Users\\503129107\\.nuget\\packages\\",
+        "outputPath": "C:\\Development\\Projs\\Kiosk\\ExampleSpec\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Development\\Projs\\Kiosk\\.nuget\\NuGet.Config",
+          "C:\\Users\\503129107\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Windows\\SysWOW64\\config\\systemprofile\\AppData\\Roaming\\Nuget\\Nuget.config": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
