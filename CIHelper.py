@@ -47,7 +47,7 @@ def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,bui
     os.mkdir("UnitTest")       
     os.chdir(sourceUnitTestPath+"\\Release")
     for files in os.listdir(sourceUnitTestPath+"\\Release"):
-        if(files.endswith('.xml')| files.endswith('.coveragexml')| files.endswith('.htm')):
+        if(files.endswith('.xml')| files.endswith('.coveragexml')| files.endswith('.htm') | files.endswith('.html')):
             shutil.move(files, destinationBuildPath+"\\Release\\UnitTest\\")                       
                      
     shutil.copytree(sourceBuildPath+"\\Debug",destinationBuildPath+"\\Debug")
@@ -59,7 +59,7 @@ def CopyBuildFiles(sourceBuildPath, destinationBuildPath, sourceUnitTestPath,bui
     os.mkdir("UnitTest")    
     os.chdir(sourceUnitTestPath+"\\Debug")        
     for files in os.listdir(sourceUnitTestPath+"\\Debug"):
-        if(files.endswith('.xml') | files.endswith('.coveragexml')| files.endswith('.htm')):
+        if(files.endswith('.xml') | files.endswith('.coveragexml')| files.endswith('.htm') | files.endswith('.html')):
             shutil.move(files, destinationBuildPath+"\\Debug\\UnitTest\\")                                  
       
                        
