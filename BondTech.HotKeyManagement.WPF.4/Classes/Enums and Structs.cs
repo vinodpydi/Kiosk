@@ -18,6 +18,7 @@ namespace BondTech.HotKeyManagement.WPF._4
     internal enum KeyboardMessages : int
     {
         /// <summary>A key is down.
+        /// 
         /// </summary>
         WmKeydown = 0x0100,
         /// <summary>A key is released.
