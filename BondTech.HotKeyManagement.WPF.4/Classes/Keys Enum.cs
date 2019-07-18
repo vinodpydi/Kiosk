@@ -2,7 +2,7 @@
  * as WinForm and I've not found a suitable way of converting them to their WPF equivalent. I've tried 
  * using the KeyInterop class but it just makes it cumbersome. With the view of providing the same
  * functionalities as WinForm in this library. I've resulted to this. Feel free to explore the KeyInterop
- * class in the System.Windows.Input namespace */
+ * class in the System.Windows.Input namespace **/
 
 using System;
 using System.ComponentModel;
