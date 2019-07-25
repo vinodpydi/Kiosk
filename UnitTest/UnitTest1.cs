@@ -2,6 +2,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BondTech.HotKeyManagement.WPF;
 
+
+
+
 namespace UnitTest
 {
     [TestClass]
