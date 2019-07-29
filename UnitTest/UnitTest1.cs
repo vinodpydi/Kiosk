@@ -2,8 +2,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BondTech.HotKeyManagement.WPF;
 
-
-
 namespace UnitTest
 {
     [TestClass]
@@ -21,7 +19,6 @@ namespace UnitTest
             String expected1 = "Vinod Pydi";
             String actual;
             String actual1;
-
 
             //Act 
             actual = objEmployee.GetName(firstName, lastName);
