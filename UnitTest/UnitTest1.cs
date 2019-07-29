@@ -20,7 +20,6 @@ namespace UnitTest
             String actual;
             String actual1;
 
-
             //Act 
             actual = objEmployee.GetName(firstName, lastName);
             actual1 = objEmployee.GetName1(firstName, lastName);
