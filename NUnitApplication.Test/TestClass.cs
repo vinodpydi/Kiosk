@@ -8,7 +8,7 @@ namespace NUnitApplication.Test
     [TestFixture]
     public class TestClass
     {
-
+        //Add a comment to test the logs
          [TestCase]
         public void UnitTestMethod()
         {
