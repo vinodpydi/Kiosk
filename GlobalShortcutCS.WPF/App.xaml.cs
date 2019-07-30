@@ -5,7 +5,7 @@ using System.Data;
 using System.Windows;
 
 
-//check jenkins changes are reflecting or not
+//check jenkins 
 namespace GlobalShortcutCS.WPF
 {
  
