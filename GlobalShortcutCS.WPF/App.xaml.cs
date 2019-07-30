@@ -6,9 +6,7 @@ using System.Windows;
 
 namespace GlobalShortcutCS.WPF
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
+ 
     public partial class App : Application
     {
     }

@@ -3,6 +3,7 @@ using BondTech.HotKeyManagement.WPF;
 using NUnit.Framework;
 using System;
 
+//Add the Whitespaces
 namespace NUnitApplication.Test
 {
     [TestFixture]
