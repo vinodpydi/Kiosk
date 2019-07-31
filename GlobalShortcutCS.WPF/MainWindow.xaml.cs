@@ -143,7 +143,6 @@ namespace GlobalShortcutCS.WPF
 
                     FileisPlaying = true;
                     timer.Start();
-
                     Thread.Sleep(1000);
                     double duration = myMediaPlayer.NaturalDuration.TimeSpan.TotalMilliseconds;
                     TimeLine.Maximum = duration;
