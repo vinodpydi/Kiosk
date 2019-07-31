@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BondTech.HotKeyManagement.WPF;
-//change the content
+//change the content andcommit
 
 
 namespace UnitTest
