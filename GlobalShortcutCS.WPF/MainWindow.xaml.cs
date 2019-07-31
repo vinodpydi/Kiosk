@@ -8,6 +8,8 @@ using System.Threading;
 using Microsoft.Win32; //Contains the file picker dialog.
 using BondTech.HotKeyManagement.WPF;
 
+//contain the logic
+
 namespace GlobalShortcutCS.WPF
 {
     /// <summary>
